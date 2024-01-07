@@ -5,5 +5,9 @@ app.listen(port,function(){
     console.log('app is running on port ' + port)
 })
 app.get('/',(req,res)=>{
-    res.send("Hey my name is Vinayak")
+    res.json({
+        name : "Vinayak",
+        age : 20,
+        college : "dsatm"
+    })
 })
